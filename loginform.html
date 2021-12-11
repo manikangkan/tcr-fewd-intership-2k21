@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: sans-serif;
+    }
+    
+    #quickBook {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #quickBook .content .wrapper {
+        color: #fff;
+        background: #000;
+        padding: 15px 20px;
+        width: 14rem;
+        font-size: 13px;
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    #quickBook .content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #quickBook .form {
+        display: flex;
+        /* border: 1px solid red; */
+        padding: 35px 25px;
+        border-radius: 20px;
+        border-top-left-radius: 0px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    #quickBook .boxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 0px 24px;
+    }
+    
+    #quickBook .form .boxes:first-child,
+    #quickBook .form .boxes:last-child {
+        border: none;
+    }
+    
+    #quickBook .boxes span {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+    #quickBook .boxes a {
+        background: orange;
+        text-decoration: none;
+        color: #fff;
+        padding: 20px 35px;
+    }
+    
+    #quickBook .boxes img {
+        height: 2rem;
+    }
+    
+    #quickBook .boxes span small {
+        margin-bottom: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        color: #555;
+    }
+    
+    #quickBook .boxes select,
+    input {
+        width: 3rem;
+        width: 9rem;
+        height: 2rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding-left: 4px;
+    }
+    
+    #quickBook .boxes input[type="number"]::-webkit-inner-spin-button,
+    #quickBook .boxes input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    @media only screen and (max-width:600px) {
+        #quickBook .content .wrapper {
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            font-size: 12px;
+            padding: 12px 0px;
+            width: 12rem;
+        }
+        #quickBook .form {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom-right-radius: 0px;
+        }
+        #quickBook .boxes {
+            border-left: none;
+            padding: 0 0;
+            margin: 10px 0;
+            position: relative;
+        }
+        #quickBook .boxes img {
+            position: absolute;
+            top: 28px;
+            left: 13px;
+        }
+        #quickBook .boxes select,
+        input {
+            width: 17rem;
+            height: 3rem;
+            padding-left: 2.4rem;
+        }
+        #quickBook .boxes a {
+            padding: 12px 35px;
+        }
+        #quickBook .boxes span small {
+            font-size: 13px;
+        }
+    }
+</style>
+
+<body>
+    <div id="quickBook">
+        <div class="content">
+            <div class="wrapper">
+                <h1>Quick Book</h1>
+            </div>
+            <div class="form">
+                <div class="boxes">
+                    <img src="./images/location.svg" alt="">
+                    <span>
+                        <small>Choose Destination</small>
+                        <select>
+                            <option value="">Select...</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                            <option value="assam">Assam</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="boxes">
+                    <img src="./images/calendar-tick.svg" alt="">
+                    <span>
+                        <small>Arrival Date</small>
+                        <input type="date">
+                    </span>
+                </div>
+                <div class="boxes">
+                    <img src="./images/calendar-remove.svg" alt="">
+                    <span>
+                        <small>Leaving Date</small>
+                        <input type="date">
+                    </span>
+                </div>
+                <div class="boxes">
+                    <img src="./images/people.svg" alt="">
+                    <span>
+                        <small>Number of Guests</small>
+                        <input type="number">
+                    </span>
+                </div>
+                <div class="boxes">
+                    <a href="#">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

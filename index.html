@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel and Tourism Management</title>
+    <link
+      rel="stylesheet"
+      `
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="slick.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ----- aos css link ----- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo">Tra<span>velocity</span></a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="book.html">book</a>
+        <a href="package_expand.html">packages</a>
+        <a href="services.html">services</a>
+        <a href="gallery_expand.html">gallery</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+      </nav>
+
+      <div class="icons">
+        <img id="search-btn" src="assets/search-normal.svg" alt="" /><img
+          id="login-btn"
+          src="assets/profile-circle.svg"
+          alt=""
+        />
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input
+          type="search"
+          id="search-bar"
+          placeholder="type here to search..."
+        />
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <section class="login-form-container">
+      <i
+        class="bi bi-box-arrow-left"
+        id="form-close"
+        style="font-size: 2.8rem"
+      ></i>
+
+      <form action="#">
+        <div class="heading">
+          <h1>Hello there, let's login</h1>
+        </div>
+        <div class="input-div">
+          <label for="mail">Email</label>
+          <input type="email" placeholder="Enter your Email" />
+          <img src="./images/email-icon.svg" alt="" />
+        </div>
+        <div class="input-div">
+          <label for="Password">Password</label>
+          <input type="password" placeholder="Enter your Email" />
+          <img src="./images/key-icon.svg" alt="" />
+        </div>
+        <div class="options">
+          <a href="#"><input type="checkbox" />Remember Me</a>
+          <a href="#">Forgot password?</a>
+        </div>
+        <div class="btn">
+          <a href="#">you're done, let's go</a>
+        </div>
+        <div class="create-acc">
+          <small>Don't have an account? <a href="#">Create Now!</a></small>
+        </div>
+      </form>
+    </section>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3 class="add_anim">Don't listen what they say, go see</h3>
+        <p>
+          One way to get the most out of life is to look upon it's an adventure
+        </p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="images/vid-1.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- book section starts  -->
+
+    <section class="book" id="book">
+      <div id="quickBook">
+        <div class="content">
+          <div class="wrapper">
+            <h1>Quick Book</h1>
+          </div>
+          <div class="form">
+            <div class="boxes">
+              <img src="./images/location.svg" alt="" />
+              <span>
+                Choose your location
+                <select>
+                  <option value="">Select...</option>
+                  <option value="assam">Assam</option>
+                  <option value="assam">Punjab</option>
+                  <option value="assam">Goa</option>
+                  <option value="assam">Rajasthan</option>
+                  <option value="assam">Jammu & Kashmir</option>
+                  <option value="assam">Meghalaya</option>
+                </select>
+              </span>
+            </div>
+            <div class="boxes">
+              <img src="./images/calendar-tick.svg" alt="" />
+              <span>
+                <small>Arrival Date</small>
+                <input type="date" />
+              </span>
+            </div>
+            <div class="boxes">
+              <img src="./images/calendar-remove.svg" alt="" />
+              <span>
+                <small>Leaving Date</small>
+                <input type="date" />
+              </span>
+            </div>
+            <div class="boxes">
+              <img src="./images/people.svg" alt="" />
+              <span>
+                <small>Number of Guests</small>
+                <input type="number" />
+              </span>
+            </div>
+            <div class="book_btn">
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- book section ends -->
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+      <h1 class="heading">our special packages</h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <div class="img">
+            <img src="images/Assam.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Assam</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, nam!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>$500.00</span></div>
+            <a href="assam.html" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="img">
+            <img src="images/Punjab.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Punjab</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, nam!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>$500.00</span></div>
+            <a href="punjab.html" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="img">
+            <img src="images/Goa.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Goa</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, nam!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>$500.00</span></div>
+            <a href="Goa.html" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="img">
+            <img src="images/Rajasthan.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Rajasthan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, nam!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>$500.00</span></div>
+            <a href="Rajasthan.html" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="img">
+            <img src="images/Kashmir.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Jammu & Kashmir</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, nam!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>$500.00</span></div>
+            <a href="J&K.html" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="img">
+            <img src="images/Meghalaya.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Meghalaya</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, nam!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$50.00 <span>$500.00</span></div>
+            <a href="meghalaya.html" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+      <a href="package_expand.html" class="btn" id="explore_btn">View More</a>
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+      <h1 class="heading">we offer best services</h1>
+      <div class="box-container" style="margin-top: 10rem">
+        <div class="box">
+          <i class="bi bi-building"></i>
+          <h3>best hotel</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            commodi earum, quis voluptate exercitationem ut minima itaque iusto
+            ipsum corrupti!
+          </p>
+        </div>
+        <div class="box">
+          <i class="bi bi-cup-straw"></i>
+          <h3>full organic food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            commodi earum, quis voluptate exercitationem ut minima itaque iusto
+            ipsum corrupti!
+          </p>
+        </div>
+        <div class="box">
+          <i class="bi bi-cone-striped"></i>
+          <h3>assure safety</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            commodi earum, quis voluptate exercitationem ut minima itaque iusto
+            ipsum corrupti!
+          </p>
+        </div>
+        <div class="box">
+          <i class="bi bi-globe"></i>
+          <h3>around the globe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            commodi earum, quis voluptate exercitationem ut minima itaque iusto
+            ipsum corrupti!
+          </p>
+        </div>
+        <div class="box">
+          <i class="bi bi-bicycle"></i>
+          <h3>amazing experience</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            commodi earum, quis voluptate exercitationem ut minima itaque iusto
+            ipsum corrupti!
+          </p>
+        </div>
+        <div class="box">
+          <i class="bi bi-snow2"></i>
+          <h3>never seen places</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            commodi earum, quis voluptate exercitationem ut minima itaque iusto
+            ipsum corrupti!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">our best trip ever</h1>
+
+      <div class="box-container">
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmFsaSUyMGluZG9uZXNpYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1578990628019-45c322869735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFsaSUyMGluZG9uZXNpYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1559517042-9af0c532fdce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJhbGklMjBpbmRvbmVzaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1611366568541-ae91c2beb69f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGJhbGklMjBpbmRvbmVzaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.pexels.com/photos/2070485/pexels-photo-2070485.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.pexels.com/photos/2928116/pexels-photo-2928116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.pexels.com/photos/2680937/pexels-photo-2680937.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.pexels.com/photos/3822127/pexels-photo-3822127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+        <div
+          class="box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <img
+            src="https://images.pexels.com/photos/3822127/pexels-photo-3822127.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <div class="content">
+            <h3>heaven like</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsum eaque debitis nostrum, quas eos porro id laudantium
+              @manikangkandas.
+            </p>
+            <a href="#" class="btn">know more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <h1 class="heading">what they say</h1>
+
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img
+                src="https://images.pexels.com/photos/3593923/pexels-photo-3593923.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+              />
+              <h3>Manikangkan Das</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img
+                src="https://images.pexels.com/photos/410505/pexels-photo-410505.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+              />
+              <h3>Abhisek Samantary</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading">get in touch</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/contact-img.svg" alt="" />
+        </div>
+
+        <form action="#">
+          <!-- <div class="heading">
+                    <h1>Contact Us</h1>
+                </div> -->
+          <div class="group">
+            <div class="same-column">
+              <div class="input-div">
+                <label for="name">Your Name</label>
+                <input type="text" />
+                <img src="./images/user.svg" alt="" />
+              </div>
+              <div class="input-div">
+                <label for="email">Mail</label>
+                <input type="email" />
+                <img src="./images/sms-edit.svg" alt="" />
+              </div>
+              <div class="input-div">
+                <label for=" number ">Phone</label>
+                <input type="number" maxlength="10" />
+                <img src="./images/call-calling.svg" alt="" />
+              </div>
+            </div>
+            <div class="textarea">
+              <label for="message">Message</label>
+              <textarea name=" " id=" " cols="30 " rows="11.5"></textarea>
+            </div>
+          </div>
+          <div class="send_btn">
+            <a href="#" class="btn">Send Message</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            quas magni pariatur est accusantium voluptas enim nemo facilis sit
+            debitis.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Branch locations</h3>
+          <a href="#">Assam</a>
+          <a href="#">Kerela</a>
+          <a href="#">Odisha</a>
+          <a href="#">Kashmir</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">Home</a>
+          <a href="#">Book</a>
+          <a href="#">Packages</a>
+          <a href="#">Services</a>
+          <a href="#">Gallery</a>
+          <a href="#">Review</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="box">
+          <h3>Follow us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+
+      <h3 class="copyright">
+        Design & Developed by <span> @manikangkandas </span> | all rights
+        reserved 2k21
+      </h3>
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+      $(".slider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow:
+          '<span class="prev_arrow"><i class="fas fa-long-arrow-alt-left"></i></span>',
+        nextArrow:
+          '<span class="next_arrow"><i class="fas fa-long-arrow-alt-right"></i></span>',
+      });
+    </script>
+
+    <!-- ------aos js link------ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>

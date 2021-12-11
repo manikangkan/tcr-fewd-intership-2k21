@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ----- aos css link ----- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Book your fav Package</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo">Tra<span>velocity</span></a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="book.html">book</a>
+        <a href="package_expand.html">packages</a>
+        <a href="services.html">services</a>
+        <a href="gallery_expand.html">gallery</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+      </nav>
+
+      <div class="icons">
+        <img id="search-btn" src="assets/search-normal.svg" alt="" /><img
+          id="login-btn"
+          src="assets/profile-circle.svg"
+          alt=""
+        />
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input
+          type="search"
+          id="search-bar"
+          placeholder="type here to search..."
+        />
+      </form>
+    </header>
+    <section class="book" id="book">
+      <div class="row" style="margin-top: 10rem">
+        <div class="image" data-aos="zoom-in">
+          <img src="images/book-img.svg" alt="" />
+        </div>
+
+        <form action="" data-aos="zoom-in">
+          <div class="inputBox">
+            <h3>Place you want to visit</h3>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputBox">
+            <h3>Enter number of travellers</h3>
+            <input type="number" placeholder="number of guests" />
+          </div>
+          <div class="inputBox">
+            <h3>Arrivals</h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3>Leaving</h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="book now" />
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            quas magni pariatur est accusantium voluptas enim nemo facilis sit
+            debitis.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Branch locations</h3>
+          <a href="#">Assam</a>
+          <a href="#">Kerela</a>
+          <a href="#">Odisha</a>
+          <a href="#">Kashmir</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">Home</a>
+          <a href="#">Book</a>
+          <a href="#">Packages</a>
+          <a href="#">Services</a>
+          <a href="#">Gallery</a>
+          <a href="#">Review</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="box">
+          <h3>Follow us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+
+      <h3 class="copyright">
+        Design & Developed by <span> @manikangkandas </span> | all rights
+        reserved 2k21
+      </h3>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+    <!-- ------aos js link------ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
